@@ -1,5 +1,5 @@
 <script>
-import axios, { isCancel, AxiosError } from 'axios';
+import axios from 'axios';
 import SearchComponent from './components/SearchComponent.vue';
 import CharList from './components/CharList.vue';
 import FoundComponent from './components/FoundComponent.vue';
@@ -21,7 +21,10 @@ export default {
   created() {
     console.log('chiama api rick e morty')
 
-    axios.get(this.store.apiUrl).then(response => console.log(response))
+    axios.get(this.store.apiUrl).then(response => {
+      this.store.info = response.data.info;
+      this.store.results = response.data.results;
+    })
   }
 }
 </script>

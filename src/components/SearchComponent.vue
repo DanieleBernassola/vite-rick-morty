@@ -5,7 +5,9 @@ export default {
 </script>
 
 <template>
-  search
+  <div class="container">
+    search
+  </div>
 </template>
 
 <style lang="scss" scoped></style>

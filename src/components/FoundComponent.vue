@@ -1,11 +1,19 @@
 <script>
+import { store } from '../store';
 export default {
-  name: 'FoundComponent'
+  name: 'FoundComponent',
+  data() {
+    return {
+      store
+    }
+  }
 }
 </script>
 
 <template>
-  found
+  <div class="container">
+    <p>Found 20 characters</p>
+  </div>
 </template>
 
 <style lang="scss" scoped></style>
