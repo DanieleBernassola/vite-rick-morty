@@ -30,14 +30,18 @@ export default {
 </script>
 
 <template>
-  <h1>Vite Rick and Morty</h1>
-  <SearchComponent></SearchComponent>
-  <CharList></CharList>
-  <FoundComponent></FoundComponent>
+  <div class="container">
+    <h1>Rick and Morty App</h1>
+    <SearchComponent></SearchComponent>
+    <CharList></CharList>
+    <FoundComponent></FoundComponent>
+  </div>
 </template>
 
 <style lang="scss" scoped>
 h1 {
+  margin-top: 1rem;
+  margin-bottom: 5rem;
   text-align: center;
 }
 </style>

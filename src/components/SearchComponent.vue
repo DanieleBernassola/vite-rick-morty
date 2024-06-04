@@ -5,8 +5,10 @@ export default {
 </script>
 
 <template>
-  <div class="container">
-    search
+  <div class="row">
+    <div class="col-100">
+      search
+    </div>
   </div>
 </template>
 

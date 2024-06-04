@@ -11,8 +11,10 @@ export default {
 </script>
 
 <template>
-  <div class="container">
-    <p>Found 20 characters</p>
+  <div class="row">
+    <div class="col-100">
+      <h4>Found 20 characters</h4>
+    </div>
   </div>
 </template>
 

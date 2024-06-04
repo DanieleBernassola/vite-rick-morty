@@ -11,11 +11,11 @@ export default {
 </script>
 
 <template>
-  <div class="container">
-    <div class="row">
-      <div class="col-25" v-for="character in store.results">
-        <img class="radius" :src="character.image" :alt="character.name">
-        <h2 class="mb-1">{{ character.name }}</h2>
+  <div class="row">
+    <div class="col-25" v-for="character in store.results">
+      <img class="radius" :src="character.image" :alt="character.name">
+      <h2>{{ character.name }}</h2>
+      <div class="my-2">
         <p>{{ character.status }}</p>
         <p>{{ character.species }}</p>
       </div>
