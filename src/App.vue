@@ -18,13 +18,32 @@ export default {
     }
   },
 
+  // Funzione ricerca personaggio
+  methods: {
+    searchChar() {
+      axios.get(this.store.apiInfo.url, {
+        params: {
+          page: this.store.apiInfo.pageNumber
+        }
+      })
+        .then((response) => {
+          // Destrutturazione info e results
+          const { info, results } = response.data
+
+          this.store.info = info;
+          this.store.results = results;
+        })
+    }
+  },
+
   created() {
     console.log('chiama api rick e morty')
+    // Richiama funzione ricerca
+    this.searchChar()
 
-    axios.get(this.store.apiUrl).then(response => {
-      this.store.info = response.data.info;
-      this.store.results = response.data.results;
-    })
+    // axios.get(this.store.apiUrl).then(response => {
+    //   this.store.info = response.data.info;
+    //   this.store.results = response.data.results;)}
   }
 }
 </script>

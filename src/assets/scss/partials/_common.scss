@@ -2,33 +2,6 @@
 
 @use "./variables" as *;
 
-body {
-  background-color: #eee;
-}
-
-.container {
-  margin: 0 1rem;
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 2rem;
-
-    .col-100 {
-      width: 100%;
-      text-align: center;
-    }
-
-    .col-25 {
-      width: 25%;
-      text-align: center;
-    }
-  }
-}
-
-.my-2 {
-  margin: 2rem 0;
-}
-
 .radius {
   border-radius: 50%;
 }
